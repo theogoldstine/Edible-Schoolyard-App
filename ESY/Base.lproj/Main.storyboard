@@ -1,24 +1,414 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Xq-TU-vVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Muli-Bold.ttf">
+            <string>Muli-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ESY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNk-Bf-Mo1">
+                                <rect key="frame" x="0.0" y="88" width="207" height="360"/>
+                                <color key="backgroundColor" red="0.71372549019607845" green="0.65490196078431373" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="aL0-fj-yId"/>
+                                    <constraint firstAttribute="width" constant="207" id="oW8-ZS-mSB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="30"/>
+                                <state key="normal" title="Our Story">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oOJ-eh-ybs" kind="show" id="W3c-Dz-q8L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDm-J0-1LG">
+                                <rect key="frame" x="207" y="88" width="207" height="360"/>
+                                <color key="backgroundColor" red="0.58823529411764708" green="0.12549019607843137" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="30"/>
+                                <state key="normal" title="Resources">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uVm-ts-xGu" kind="show" id="dxc-Dz-GqL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PH-E1-0tr">
+                                <rect key="frame" x="0.0" y="448" width="207" height="448"/>
+                                <color key="backgroundColor" red="0.058823529411764705" green="0.57647058823529407" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="29"/>
+                                <state key="normal" title="ESY Berkeley">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91h-tC-Q4L">
+                                <rect key="frame" x="207" y="448" width="207" height="451"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.50588235294117645" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Muli-Bold" family="Muli" pointSize="30"/>
+                                <state key="normal" title="Edu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oDm-J0-1LG" firstAttribute="leading" secondItem="bNk-Bf-Mo1" secondAttribute="trailing" id="0vh-Sj-HAn"/>
+                            <constraint firstItem="oDm-J0-1LG" firstAttribute="leading" secondItem="91h-tC-Q4L" secondAttribute="leading" id="2KJ-Br-t8U"/>
+                            <constraint firstItem="bNk-Bf-Mo1" firstAttribute="baseline" secondItem="oDm-J0-1LG" secondAttribute="firstBaseline" id="9LA-J1-buC"/>
+                            <constraint firstAttribute="bottom" secondItem="0PH-E1-0tr" secondAttribute="bottom" id="DMu-3j-g2X"/>
+                            <constraint firstItem="bNk-Bf-Mo1" firstAttribute="leading" secondItem="0PH-E1-0tr" secondAttribute="leading" id="GZd-gT-hMa"/>
+                            <constraint firstItem="bNk-Bf-Mo1" firstAttribute="top" secondItem="oDm-J0-1LG" secondAttribute="top" id="LUC-SA-ybR"/>
+                            <constraint firstAttribute="trailing" secondItem="oDm-J0-1LG" secondAttribute="trailing" id="Qca-3H-sUq"/>
+                            <constraint firstItem="bNk-Bf-Mo1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YcE-lU-jpf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="91h-tC-Q4L" secondAttribute="bottom" constant="-37" id="fE6-wN-Zxu"/>
+                            <constraint firstItem="bNk-Bf-Mo1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iGR-e8-AV1"/>
+                            <constraint firstItem="0PH-E1-0tr" firstAttribute="top" secondItem="bNk-Bf-Mo1" secondAttribute="bottom" id="n9S-Gc-JaY"/>
+                            <constraint firstItem="bNk-Bf-Mo1" firstAttribute="trailing" secondItem="0PH-E1-0tr" secondAttribute="trailing" id="qpn-BL-HzQ"/>
+                            <constraint firstItem="oDm-J0-1LG" firstAttribute="trailing" secondItem="91h-tC-Q4L" secondAttribute="trailing" id="xEi-V8-E8y"/>
+                            <constraint firstItem="0PH-E1-0tr" firstAttribute="top" secondItem="91h-tC-Q4L" secondAttribute="top" id="yF1-y6-0DF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zAG-c8-Ag8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Resource Web View Controller-->
+        <scene sceneID="8SM-sd-hG4">
+            <objects>
+                <viewController id="uVm-ts-xGu" customClass="ResourceWebViewController" customModule="ESY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0I-Q2-Kba">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NcN-c1-5es">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Y1Z-2r-Lt2"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="NcN-c1-5es" id="u7Q-lr-oBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtU-X9-ood" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182.608695652174" y="735.9375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="p90-ya-KsG">
+            <objects>
+                <viewController id="oOJ-eh-ybs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ps-lU-5mq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2019-04-28 at 9.34.34 PM" translatesAutoresizingMaskIntoConstraints="NO" id="atk-2t-8rW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="Avc-UI-RwZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hf-zs-awt">
+                                <rect key="frame" x="27" y="599" width="361" height="77"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="JBY-Ll-f3n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <state key="normal" title="1. Our Mission">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DsU-V7-bgC" kind="show" id="R7v-d5-yKO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uI5-If-DJI">
+                                <rect key="frame" x="27" y="684" width="361" height="77"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="eEX-vt-5i4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <state key="normal" title="2. Our Work">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xkb-VK-wBq" kind="show" id="RG5-Wd-A7G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ix-F9-f5C">
+                                <rect key="frame" x="27" y="769" width="361" height="77"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="3Jv-1u-wGe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <state key="normal" title="3. Our Founder">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pYY-jl-NkW" kind="show" id="eQz-tU-eEj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XJa-bk-0CK">
+                                <rect key="frame" x="20" y="211" width="374" height="391"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">It all started in 1995 with the idea that we can transform children's relationship with food if we give them a taste of what's possible. To demonstrate this simple truth, Alice Waters created the first Edible Schoolyard in partnership with the principal at a public middle school in Berkeley. 
+
+As the idea took shape, a committed and creative coalition of educators, families, farmers, cooks, and artists joined the effort.
+
+Involving students directly was key: with their participation, an organic garden took root and flourished as a rich teaching environment, while a kitchen classroom brought everyone to the table to share what they were learning. 
+
+Today, Alice Waters's idea is known as edible education, and that very first program in California inspires and trains educators from across the country – and around the world – to seed and grow sustainable programs in their communities.</string>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="atk-2t-8rW" secondAttribute="trailing" id="113-Wr-bid"/>
+                            <constraint firstItem="uI5-If-DJI" firstAttribute="top" secondItem="XJa-bk-0CK" secondAttribute="bottom" constant="82" id="4aP-Cr-MbT"/>
+                            <constraint firstItem="atk-2t-8rW" firstAttribute="leading" secondItem="7ps-lU-5mq" secondAttribute="leading" id="8W6-Ap-4Sg"/>
+                            <constraint firstItem="2Ix-F9-f5C" firstAttribute="top" secondItem="uI5-If-DJI" secondAttribute="bottom" constant="8" symbolic="YES" id="9dS-5E-NF6"/>
+                            <constraint firstItem="XJa-bk-0CK" firstAttribute="top" secondItem="atk-2t-8rW" secondAttribute="bottom" constant="8" symbolic="YES" id="EdA-cC-Vkw"/>
+                            <constraint firstItem="XJa-bk-0CK" firstAttribute="leading" secondItem="7ps-lU-5mq" secondAttribute="leadingMargin" id="GbN-GI-VMl"/>
+                            <constraint firstItem="atk-2t-8rW" firstAttribute="centerX" secondItem="XJa-bk-0CK" secondAttribute="centerX" id="Ilo-qs-r9d"/>
+                            <constraint firstItem="uI5-If-DJI" firstAttribute="trailing" secondItem="2Ix-F9-f5C" secondAttribute="trailing" id="Xnu-gP-ciA"/>
+                            <constraint firstItem="3Hf-zs-awt" firstAttribute="leading" secondItem="a1f-7E-RH5" secondAttribute="leading" constant="27" id="ZOg-qz-JGH"/>
+                            <constraint firstItem="atk-2t-8rW" firstAttribute="top" secondItem="a1f-7E-RH5" secondAttribute="top" id="ZtP-yr-puP"/>
+                            <constraint firstItem="uI5-If-DJI" firstAttribute="leading" secondItem="2Ix-F9-f5C" secondAttribute="leading" id="bs7-hn-G2r"/>
+                            <constraint firstItem="3Hf-zs-awt" firstAttribute="leading" secondItem="uI5-If-DJI" secondAttribute="leading" id="gb5-kM-V3Q"/>
+                            <constraint firstItem="uI5-If-DJI" firstAttribute="top" secondItem="3Hf-zs-awt" secondAttribute="bottom" constant="8" symbolic="YES" id="hBR-Lj-Yqa"/>
+                            <constraint firstItem="3Hf-zs-awt" firstAttribute="trailing" secondItem="uI5-If-DJI" secondAttribute="trailing" id="mOq-Mm-BpD"/>
+                            <constraint firstItem="a1f-7E-RH5" firstAttribute="bottom" secondItem="2Ix-F9-f5C" secondAttribute="bottom" constant="16" id="pLC-1B-6hY"/>
+                            <constraint firstItem="XJa-bk-0CK" firstAttribute="centerX" secondItem="3Hf-zs-awt" secondAttribute="centerX" id="rV3-jw-xVV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a1f-7E-RH5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8A-dP-Icq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2468" y="-485"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="H0c-52-26j">
+            <objects>
+                <viewController id="DsU-V7-bgC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="voQ-p0-yvS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aHh-Ac-LNG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Vgq-mD-T7b"/>
+                                </constraints>
+                                <string key="text">1. Our Mission 
+</string>
+                                <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5DM-Zn-f0b">
+                                <rect key="frame" x="20" y="167" width="374" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The mission of the Edible Schoolyard Project is to build and share a national edible education curriculum for pre-kindergarten through high school.
+
+Edible education connects the experience of school to the real, lived experience of our students. It prioritizes access to the healthy food that underpins all other efforts to give children a strong start at school and in life.
+
+That's why we believe that integrating an edible education into all schools can dramatically change the schooling experience for every child in the United States. </string>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5DM-Zn-f0b" firstAttribute="top" secondItem="aHh-Ac-LNG" secondAttribute="bottom" constant="30" id="2Hf-Jd-iRE"/>
+                            <constraint firstAttribute="trailing" secondItem="aHh-Ac-LNG" secondAttribute="trailing" id="3nx-DX-dit"/>
+                            <constraint firstItem="j3P-Xp-57G" firstAttribute="bottom" secondItem="5DM-Zn-f0b" secondAttribute="bottom" constant="164" id="Kae-UY-7yM"/>
+                            <constraint firstItem="aHh-Ac-LNG" firstAttribute="top" secondItem="j3P-Xp-57G" secondAttribute="top" id="bKU-7V-p4C"/>
+                            <constraint firstItem="aHh-Ac-LNG" firstAttribute="leading" secondItem="voQ-p0-yvS" secondAttribute="leading" id="dqD-od-lnh"/>
+                            <constraint firstItem="aHh-Ac-LNG" firstAttribute="centerX" secondItem="5DM-Zn-f0b" secondAttribute="centerX" id="kpz-CD-fqz"/>
+                            <constraint firstItem="5DM-Zn-f0b" firstAttribute="leading" secondItem="voQ-p0-yvS" secondAttribute="leadingMargin" id="ryi-ig-Mvc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j3P-Xp-57G"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DcH-12-RBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3781" y="-1171"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TdL-Zt-yec">
+            <objects>
+                <viewController id="xkb-VK-wBq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="11Y-ru-4u7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaV-RP-ccC">
+                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">THE MODEL 
+The garden, kitchen, and cafeteria at King Middle School serve as a demonstration site and innovation hub for the edible education curriculum and pedagogy. We have worked closely with the whole school community to connect a one-acre teaching garden and a dedicated kitchen classroom to the science and humanities curricula taught to all students. Evening family classes invite parents and trusted adults to learn with and from their students. Across the playground, the larger cafeteria kitchen prepares delicious school meals from scratch for all public school students in Berkeley, using fresh, local, seasonal ingredients.
+
+TRAINING
+In our professional development programs and short courses, we empower other educators to create and sustain similar programs in their home communities. Our goal is to help schools develop strong edible education programs grounded in shared standards of practice and justice, responsive to the cultural, institutional, and funding realities of their own particular contexts. Since 2009, we have trained 897 teachers, administrators, food service staff, nutritionists, community leaders, and parents from over 367 schools worldwide, representing more than 1 million students in 42 US states. 
+
+TOOLS &amp; TECHNOLOGY
+Everything we create is documented and shared for free. Our online Resource Library and Network community offer educators vetted lessons, teaching practices, program tools, and training materials – fostering the creation, growth, and enrichment of edible education programs near and far. 
+
+ADVOCACY 
+We are proud to be part of a dynamic national and international movement uniting grassroots and community groups with highly influential civic and government institutions, all committed to forging a just, sustainable food system and future. </string>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jm-kL-0dx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="lL8-O5-NLK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <state key="normal" title="2. Our Work">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Jm-kL-0dx" firstAttribute="trailing" secondItem="SaV-RP-ccC" secondAttribute="trailing" id="Irv-o6-0o7"/>
+                            <constraint firstItem="8Jm-kL-0dx" firstAttribute="leading" secondItem="11Y-ru-4u7" secondAttribute="leading" id="KDO-Rm-ao8"/>
+                            <constraint firstItem="SaV-RP-ccC" firstAttribute="bottom" secondItem="azW-gx-uRW" secondAttribute="bottom" id="NUu-8i-PBD"/>
+                            <constraint firstAttribute="trailing" secondItem="8Jm-kL-0dx" secondAttribute="trailing" id="ZDU-UG-v0k"/>
+                            <constraint firstItem="8Jm-kL-0dx" firstAttribute="top" secondItem="azW-gx-uRW" secondAttribute="top" id="aqI-Pq-pVy"/>
+                            <constraint firstItem="SaV-RP-ccC" firstAttribute="top" secondItem="8Jm-kL-0dx" secondAttribute="bottom" constant="8" symbolic="YES" id="n8J-Rl-YEP"/>
+                            <constraint firstItem="8Jm-kL-0dx" firstAttribute="leading" secondItem="SaV-RP-ccC" secondAttribute="leading" id="oMS-ta-5NI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="azW-gx-uRW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pb3-hT-hpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3780" y="-404"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TJR-Ms-y4q">
+            <objects>
+                <viewController id="pYY-jl-NkW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GvU-gn-M3Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TQ-Ne-mHm">
+                                <rect key="frame" x="0.0" y="88" width="414" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="RPZ-fA-nHr"/>
+                                </constraints>
+                                <string key="text">3. Our Founder 
+</string>
+                                <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfR-7t-wrm">
+                                <rect key="frame" x="26" y="569" width="362" height="275"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="gDn-Tj-glK"/>
+                                </constraints>
+                                <string key="text">Alice Waters is a chef, author, food activist, and the founder and owner of Chez Panisse Restaurant in Berkeley, California.
+
+She founded the Edible Schoolyard Project in 1995 — bringing her perspective as a trained Montessori teacher and fervent political activist to the mission, along with an already renowned reputation as a gifted chef and champion of sustainable agriculture.
+
+She grounded her vision in key principles: that children deserve to be nurtured in body and mind, treated with dignity, and shown that they are valued.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SidebarCrop_ALW_headshot_750_0" translatesAutoresizingMaskIntoConstraints="NO" id="MFp-ai-ouL">
+                                <rect key="frame" x="0.0" y="167" width="414" height="360"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5iO-eV-fRP">
+                                <rect key="frame" x="32" y="535" width="362" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="k0E-zh-FHr"/>
+                                </constraints>
+                                <string key="text">Alice Waters, Founder of the Edible Schoolyard Project
+</string>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6TQ-Ne-mHm" secondAttribute="trailing" id="1xI-Gm-haz"/>
+                            <constraint firstItem="MFp-ai-ouL" firstAttribute="top" secondItem="6TQ-Ne-mHm" secondAttribute="bottom" constant="30" id="GmU-sa-Sxe"/>
+                            <constraint firstItem="6TQ-Ne-mHm" firstAttribute="trailing" secondItem="MFp-ai-ouL" secondAttribute="trailing" id="O8h-bv-jWj"/>
+                            <constraint firstItem="QfR-7t-wrm" firstAttribute="leading" secondItem="VdM-bZ-0GW" secondAttribute="leading" constant="26" id="Pqs-jE-7iL"/>
+                            <constraint firstItem="6TQ-Ne-mHm" firstAttribute="top" secondItem="VdM-bZ-0GW" secondAttribute="top" id="SAj-6Z-TGG"/>
+                            <constraint firstItem="5iO-eV-fRP" firstAttribute="top" secondItem="MFp-ai-ouL" secondAttribute="bottom" constant="8" symbolic="YES" id="TTA-EE-lN6"/>
+                            <constraint firstItem="MFp-ai-ouL" firstAttribute="centerX" secondItem="QfR-7t-wrm" secondAttribute="centerX" id="XRo-cg-uL2"/>
+                            <constraint firstItem="5iO-eV-fRP" firstAttribute="trailing" secondItem="GvU-gn-M3Q" secondAttribute="trailingMargin" id="ZAd-LE-lBY"/>
+                            <constraint firstItem="6TQ-Ne-mHm" firstAttribute="leading" secondItem="GvU-gn-M3Q" secondAttribute="leading" id="f0g-JX-QsL"/>
+                            <constraint firstItem="VdM-bZ-0GW" firstAttribute="bottom" secondItem="QfR-7t-wrm" secondAttribute="bottom" constant="18" id="h1v-lM-1OB"/>
+                            <constraint firstItem="QfR-7t-wrm" firstAttribute="top" secondItem="5iO-eV-fRP" secondAttribute="bottom" constant="17" id="hN7-bK-QU2"/>
+                            <constraint firstItem="5iO-eV-fRP" firstAttribute="leading" secondItem="VdM-bZ-0GW" secondAttribute="leading" constant="32" id="mB0-2T-6nj"/>
+                            <constraint firstItem="6TQ-Ne-mHm" firstAttribute="leading" secondItem="MFp-ai-ouL" secondAttribute="leading" id="mDm-uR-jdh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VdM-bZ-0GW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnm-Sn-KIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3780" y="414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0z4-NW-QQ2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Xq-TU-vVM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n8t-0Z-tXL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ywh-fg-QAF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZF6-YI-1xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-387" y="115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2019-04-28 at 9.34.34 PM" width="3360" height="912"/>
+        <image name="SidebarCrop_ALW_headshot_750_0" width="960" height="960"/>
+    </resources>
 </document>

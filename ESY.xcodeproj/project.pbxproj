@@ -15,6 +15,8 @@
 		D43276642276891200FD7E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43276622276891200FD7E28 /* LaunchScreen.storyboard */; };
 		D432766F2276891200FD7E28 /* ESYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D432766E2276891200FD7E28 /* ESYTests.swift */; };
 		D432767A2276891200FD7E28 /* ESYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43276792276891200FD7E28 /* ESYUITests.swift */; };
+		D432768822769E7F00FD7E28 /* Muli-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D432768722769E7F00FD7E28 /* Muli-Bold.ttf */; };
+		D49B08432277AD6100B3711A /* ResourceWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B08422277AD6100B3711A /* ResourceWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D43276752276891200FD7E28 /* ESYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43276792276891200FD7E28 /* ESYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESYUITests.swift; sourceTree = "<group>"; };
 		D432767B2276891200FD7E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D432768722769E7F00FD7E28 /* Muli-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Muli-Bold.ttf"; sourceTree = "<group>"; };
+		D49B08422277AD6100B3711A /* ResourceWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				D43276562276891100FD7E28 /* AppDelegate.swift */,
 				D43276582276891100FD7E28 /* ViewController.swift */,
 				D432765A2276891100FD7E28 /* Main.storyboard */,
+				D49B08422277AD6100B3711A /* ResourceWebViewController.swift */,
+				D432768722769E7F00FD7E28 /* Muli-Bold.ttf */,
 				D43276602276891200FD7E28 /* Assets.xcassets */,
 				D43276622276891200FD7E28 /* LaunchScreen.storyboard */,
 				D43276652276891200FD7E28 /* Info.plist */,
@@ -234,6 +240,7 @@
 			files = (
 				D43276642276891200FD7E28 /* LaunchScreen.storyboard in Resources */,
 				D43276612276891200FD7E28 /* Assets.xcassets in Resources */,
+				D432768822769E7F00FD7E28 /* Muli-Bold.ttf in Resources */,
 				D432765C2276891100FD7E28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +269,7 @@
 				D432765F2276891100FD7E28 /* ESY.xcdatamodeld in Sources */,
 				D43276592276891100FD7E28 /* ViewController.swift in Sources */,
 				D43276572276891100FD7E28 /* AppDelegate.swift in Sources */,
+				D49B08432277AD6100B3711A /* ResourceWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
